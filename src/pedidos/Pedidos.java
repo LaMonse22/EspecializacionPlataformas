@@ -4,6 +4,9 @@
  */
 package pedidos;
 
+import ui.PedidoForm;
+
+
 /**
  *
  * @author anl1.sui
