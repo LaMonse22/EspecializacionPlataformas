@@ -28,6 +28,16 @@ public class PedidoForm extends javax.swing.JFrame {
         initComponents();
         this.ocultarAdvertencias();
         this.llenarTiposMedicamentos();
+         this.radioButonCemefar.setActionCommand("Cemefar");
+        this.radiosDistribuidor.add(radioButonCemefar);
+        this.radioButtonCofarma.setActionCommand("Cofarma");
+        this.radiosDistribuidor.add(radioButtonCofarma);
+        this.radioButtonEmpsephar.setActionCommand("Empsephar");
+        this.radiosDistribuidor.add(radioButtonEmpsephar);
+        this.checkPrincipal.setActionCommand("Principal");   
+        this.checkSecundaria.setActionCommand("Secundaria");
+        this.chechkGroup.add(this.checkPrincipal);
+        this.chechkGroup.add(this.checkSecundaria);
              
     
     }
@@ -300,16 +310,7 @@ public class PedidoForm extends javax.swing.JFrame {
     private void buttonConfirmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonConfirmaActionPerformed
       
         boolean errores = false;
-        this.radioButonCemefar.setActionCommand("Cemefar");
-        this.radiosDistribuidor.add(radioButonCemefar);
-        this.radioButtonCofarma.setActionCommand("Cofarma");
-        this.radiosDistribuidor.add(radioButtonCofarma);
-        this.radioButtonEmpsephar.setActionCommand("Empsephar");
-        this.radiosDistribuidor.add(radioButtonEmpsephar);
-        this.checkPrincipal.setActionCommand("Principal");   
-        this.checkSecundaria.setActionCommand("Secundaria");
-        this.chechkGroup.add(this.checkPrincipal);
-        this.chechkGroup.add(this.checkSecundaria);
+      
         if (textFiedlNombreMed.getText()==null || textFiedlNombreMed.getText()
               .isEmpty()) {
           this.labelNombre.setVisible(true);
@@ -366,11 +367,8 @@ public class PedidoForm extends javax.swing.JFrame {
         this.textFiedlNombreMed.setText("");
         this.textFieldCantidad.setText("");
         this.comboBoxTipoMed.setSelectedIndex(0);
-        this.radioButonCemefar.setSelected(false);
-        this.radioButtonCofarma.setSelected(false);
-        this.radioButtonEmpsephar.setSelected(false);
-        this.checkPrincipal.setSelected(false);
-        this.checkSecundaria.setSelected(false);
+        this.radiosDistribuidor.clearSelection();
+        this.chechkGroup.clearSelection();
         this.ocultarAdvertencias();
     }//GEN-LAST:event_buttonBorrarActionPerformed
 

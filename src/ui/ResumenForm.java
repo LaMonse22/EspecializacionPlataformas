@@ -26,10 +26,10 @@ public class ResumenForm extends javax.swing.JFrame {
     }
       public void setLabelResumenSucursal (String sucursal) {
           if (sucursal.equals("Principal")) {
-              this.labelResumenSucursal.setText("Para la farmacia situada en la calle de la rosa No. 28");
+              this.labelResumenSucursal.setText("Para la farmacia situada en la Calle de la Rosa No. 28");
      
           } else {
-              this.labelResumenSucursal.setText("Para la farmacia situada en la carrera porvernir No. 32");
+              this.labelResumenSucursal.setText("Para la farmacia situada en la Calle Alcazabilla n. 3");
           }
       }
 
